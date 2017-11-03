@@ -6,7 +6,6 @@ if [ "${1:0:1}" = '-' ]; then
 fi
 
 if [ "$1" = 'mysqld_safe' ]; then
-    echo 'tu som'
 	DATADIR="/var/lib/mysql"
 	if [ ! -d "$DATADIR/mysql" ]; then
 		if [ -z "$ROOT_PASSWORD" ]; then
